@@ -1,8 +1,6 @@
 Name:                   vinegar
 Version:                0.0.0
 Synopsis:               Multi-purpose pickling combinators
-Description:
-  Hereditary Substitutions with de Bruijn indexes.
 License:                BSD3
 Author:                 Eric McCorkle
 Maintainer:             eric@metricspace.net
@@ -10,12 +8,12 @@ Stability:              Development
 Category:               Languages
 Build-type:             Simple
 Cabal-version:          >= 1.16
-Homepage:               https://github.com/saltlang/vinegar
-Bug-Reports:            https://github.com/saltlang/vinegar/issues
+Homepage:               https://github.com/saltlang/hs-vinegar
+Bug-Reports:            https://github.com/saltlang/hs-vinegar/issues
 
 Source-Repository head
   Type: git
-  Location: git@github.com:saltlang/vinegar.git
+  Location: git@github.com:saltlang/hs-vinegar.git
 
 
 Test-Suite UnitTest
@@ -27,7 +25,7 @@ Test-Suite UnitTest
 
 Library
   default-language:     Haskell2010
-  build-depends:        base, hashable, prelude-extras, bifunctors
+  build-depends:        base
   hs-source-dirs:       src/
   exposed-modules:
 
