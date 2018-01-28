@@ -1,0 +1,36 @@
+Name:                   vinegar
+Version:                0.0.0
+Synopsis:               Multi-purpose pickling combinators
+License:                BSD3
+Author:                 Eric McCorkle
+Maintainer:             eric@metricspace.net
+Stability:              Development
+Category:               Languages
+Build-type:             Simple
+Cabal-version:          >= 1.16
+Homepage:               https://github.com/saltlang/hs-vinegar
+Bug-Reports:            https://github.com/saltlang/hs-vinegar/issues
+
+Source-Repository head
+  Type: git
+  Location: git@github.com:saltlang/hs-vinegar.git
+
+
+Test-Suite UnitTest
+  default-language:     Haskell2010
+  type:                 exitcode-stdio-1.0
+  Main-Is:              UnitTest.hs
+  hs-source-dirs:       test/unit
+  build-depends:        base >= 4.8 && < 5, Cabal >= 1.16.0, vinegar
+
+Library
+  default-language:     Haskell2010
+  build-depends:        base, bytestring, array
+  hs-source-dirs:       src/
+  exposed-modules:      Vinegar.Encoding.Class
+                        Vinegar.Encoding.Desc.Class
+                        Vinegar.Encoding.Generic
+                        Vinegar.Schema.Class
+                        Vinegar.Schema.Desc.Class
+                        Vinegar.Schema.Generic
+
